@@ -1,5 +1,4 @@
 window.onload = function() {loadIntro()}
-window.onload = function() {moveBG()}
 window.onload = function() {moveBottom()}
 window.onload = function() {titleIntro()}
 
@@ -12,8 +11,8 @@ function loadIntro() {
 }
 function moveFG() {
     titleFG.style.height = "150%"
-    titleFG.style.borderRadius = "50%"
-    titleFG.style.translate = "0px -1000px"
+    titleFG.style.borderRadius = "90%"
+    titleFG.style.translate = "0px -1500px"
     bottom.style.height = "15%";
     title.style.opacity = 0;
 }
