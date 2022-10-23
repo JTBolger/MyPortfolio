@@ -65,6 +65,8 @@ body {
     width: fit-content;
     height: 100%;
     margin-left: 25%;
+    opacity: 0;
+    transition: 0.4s;
 }
 #bottom .container a {
     text-decoration: double;

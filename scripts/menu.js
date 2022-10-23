@@ -1,5 +1,6 @@
 var button = document.getElementById("bottom")
 var closebtn = document.getElementById("close-button")
+var container = document.getElementById("container")
 
 function closeNav() {
     button.style.height = "15%"
@@ -12,6 +13,7 @@ function closeNav() {
     closebtn.style.rotate = ""
     closebtn.style.translate = "0px 100%"
     closebtn.style.cursor = ""
+    container.style.opacity = ""
 }
 function openNav() {
     button.style.height = "100%";
@@ -20,6 +22,7 @@ function openNav() {
     button.style.marginBottom = "0"
     button.style.cursor = "default"
     revealButton()
+    container.style.opacity = "1"
 }
 function revealButton() {
     closebtn.style.opacity = 1;
