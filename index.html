@@ -6,7 +6,21 @@
         <link href="styles/home.css" rel="stylesheet" />
     </head>
     <body>
-        <div class="title">
+        <div class="area" >
+                <ul class="circles">
+                    <li>text</li>
+                    <li></li>
+                    <li></li>
+                    <li>text</li>
+                    <li></li>
+                    <li>text</li>
+                    <li>text</li>
+                    <li></li>
+                    <li></li>
+                    <li><p>Frontend Developer</p></li>
+                </ul>
+        </div >
+        <div class="intro">
             <div id="transitionFG">
                 <div id="PageTitle">
                     <h1>Welcome</h1>
@@ -23,7 +37,26 @@
                 <a href=./contact.html>CONTACT</a>
             </div>
         </div>
+
+        <div class="main">
+            <div id="title">
+                <h1 class="name">JT Bolger</h1>
+                <div class="links">
+                    <a href="https://www.instagram.com/jt.bolger/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/JTBolger" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:jtjb1205@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a>
+                    <a href="https://www.linkedin.com/in/john-thomas-bolger-8548a8254/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                </div>
+            </div>
+        </div>
         <script src="scripts/transition.js"></script>
         <script src="scripts/menu.js"></script>
+        <script>
+            function loadTitle() {
+                document.getElementById("title").style.translate = "0px -20%"
+            }
+            setTimeout(loadTitle, 700);
+        </script>
+        <script src="https://kit.fontawesome.com/3fc9433eba.js" crossorigin="anonymous"></script>
     </body>
 </html>
