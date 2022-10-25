@@ -79,6 +79,11 @@ body {
     font-size: 3rem;
     margin-top: 25%;
 }
+/* @media only screen and (max-width: 400px) {
+    #bottom .container a{
+        margin-top: 80%;
+    }
+} */
 #bottom .container a:hover {
     transform: (0px 3px);
 }
@@ -271,4 +276,18 @@ body {
         border-radius: 50%;
     }
 
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: none;
+}
+::-webkit-scrollbar-thumb {
+    background:#5a728f; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background:#516175;
 }

@@ -10,7 +10,8 @@ function loadIntro() {
     title.style.opacity = 1;
 }
 function moveFG() {
-    titleFG.style.height = "150%"
+    titleFG.style.height = "0%"
+    titleFG.style.borderRadius = "80%"
     titleFG.style.borderRadius = "90%"
     titleFG.style.translate = "0px -1500px"
     bottom.style.height = "15%";
