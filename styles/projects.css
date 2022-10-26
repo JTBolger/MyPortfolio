@@ -192,11 +192,44 @@ body {
     animation-delay: 0s;
     animation-duration: 11s;
 }
-.project {
-    width: 90%;
-    height: 30%;
+.main {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    flex-direction: column;
+    align-items: center;
 }
-
+.main h1 {
+    text-align: center;
+    font-family: 'arial black';
+    color: #5a728f;
+    text-shadow: 3px 3px #34425575;
+    margin-top: 1%;
+    font-size: 45px;
+    margin-bottom: 1%;
+}
+.project {
+    width: 95%;
+    height: 15rem;
+    background-color: white;
+    margin-top: 2%;
+    border-radius: 10px;
+    box-shadow: 7px 7px 5px 0px #51617533;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.image-frame {
+    width: 25%;
+    height: 100%;
+    background-color: #516175;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px #51617533;
+}
 
 
 @keyframes animate {
