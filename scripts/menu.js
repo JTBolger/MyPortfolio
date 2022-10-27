@@ -21,6 +21,7 @@ function openNav() {
     button.style.transform = "scaleY(1)"
     button.style.marginBottom = "0"
     button.style.cursor = "default"
+    button.style.position='fixed'
     revealButton()
     container.style.opacity = "1"
 }
