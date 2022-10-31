@@ -93,9 +93,9 @@ body {
     display: flex;
     justify-content: center;
 }
-.body {
-    width: 90%;
-    height: 70%;
+#body {
+    width: 60%;
+    height: 60%;
     position: absolute;
     background-color: white;
     overflow-y: scroll;
@@ -103,6 +103,66 @@ body {
     border-radius: 10px;
     box-shadow: 7px 7px 5px 0px #51617533;
     padding: 1%;
+    margin-left: -25%;
+    transition: 0.4s;
+    z-index: 1;
+}
+#bottom-arrow {
+    position: absolute;
+    width: 98%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    color: #5a728f;
+    text-shadow: 1px 1px #34425575;
+    font-size: 30px;
+    bottom: 5%;
+    z-index: 3;
+}
+#bottom-arrow a {
+    cursor: pointer;
+    transition: 0.4s;
+}
+#bottom-arrow a:hover {
+    transform: translateY(5px);
+}
+#links-border {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0.2%;
+    border-top-width: 10px;
+    background-color: #516175;
+    z-index: 2;
+    margin-bottom: 8%;
+    transition: 0.4s;
+}
+#links-container {
+    position: absolute;
+    bottom: 5%;
+    width: fit-content;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    color: #5a728f;
+    text-shadow: 1px 1px #34425575;
+    font-size: 30px;
+    opacity: 0;
+    transition: 0.4s;
+    z-index: -1;
+    margin-left: 7%;
+}
+#links-container a {
+    margin-left: 15%;
+    margin-right: 15%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#links-container a:hover {
+    transform: scale(1.1);
+}
+#links-container a:visited {
+    color: #5a728f;
 }
 .body h1 {
     text-align: center;
