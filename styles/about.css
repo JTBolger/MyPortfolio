@@ -95,7 +95,7 @@ body {
 }
 #body {
     width: 60%;
-    height: 60%;
+    height: 26rem;
     position: absolute;
     background-color: white;
     overflow-y: scroll;
@@ -164,6 +164,9 @@ body {
 #links-container a:visited {
     color: #5a728f;
 }
+#links-container a:link {
+    color: #5a728f;
+}
 .body h1 {
     text-align: center;
     font-family: 'arial black';
@@ -186,54 +189,78 @@ body {
     transition: 0.4s;
 }
 .index {
-    width: 20%;
-    height: 3%;
+    width: 1.5%;
+    height: 20%;
     position: absolute;
-    margin-right: -66%;
-    margin-top: 38%;
-    background-color: black;
+    margin-right: -35.5%;
+    margin-top: 15%;
+    background-color: #4e555e67;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
+    margin: 5px 0;
+    background-color: rgb(108, 120, 141);
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
 }
 .active, .dot:hover {
-    background-color: #717171;
+    background-color: #515b69;
 }
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
+    top: 265px;
     margin-top: -22px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
     transition: 0.6s ease;
     border-radius: 100%;
     user-select: none;
-    background-color: #5a728f;
+    background-color: #5a728fd2;
+    text-align: center;
 }
 .next {
-    height: 15px;
-    width: 15px;
-    position: absolute;
+    height: 30px;
+    width: 30px;
     z-index: 2;
-    right: 0;
+    right: 5px;
+    font-size: 15px;
 }
 .prev {
-    height: 15px;
-    width: 15px;
-    position: absolute;
+    height: 30px;
+    width: 30px;
     z-index: 2;
-    left: 10;
+    left: 5px;
+    font-size: 15px;
+}
+.next .prev i {
+    transition: 0.6s;
+}
+.next i {
+    margin-top: 8px;
+}
+.prev i {
+    margin-top: 8px;
+}
+.next:hover {
+    transform: translateX(5px);
+}
+.prev:hover {
+    transform: translateX(-5px);
+}
+.next:hover i {
+    margin-left: 2px;
+}
+.prev:hover i {
+    margin-right: 2px;
 }
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);

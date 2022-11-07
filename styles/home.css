@@ -137,7 +137,9 @@ body {
 .links a:visited {
     color: #5a728f;
 }
-
+.links a:link {
+    color: #5a728f;
+}
 
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 

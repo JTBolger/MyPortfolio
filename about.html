@@ -43,7 +43,7 @@
             <div id="body">
                 <div id="bottom-arrow"><a onclick="openLinks()"><i class="fa-solid fa-arrow-down"></i></a></div>
                 <div id="links-border"></div>
-                <div id="links-container">
+                <div id="links-container" style="display: none;">
                     <a href="https://www.instagram.com/jt.bolger/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <a href="https://github.com/JTBolger" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="mailto:jtjb1205@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a>
@@ -58,7 +58,9 @@
                     <div class="slide fade">
                         <img src="images/bonfire-pic.jpg" alt="" width="100%" height="100%"/>
                     </div>
-                    <!-- <img src="images/afterhours-logo.png" alt=""/> -->
+                    <div class="slide fade">
+                        <img src="images/seattle-pic.jpeg" alt="" width="100%" height="100%"/>
+                    </div>
 
                     <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-arrow-left"></i></a>
                     <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-arrow-right"></i></a>
@@ -67,6 +69,7 @@
             <div class="index">
                 <span class="dot" onclick="currentSlide(1)"></span>
                 <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
         <script src="scripts/transition.js"></script>
@@ -74,12 +77,13 @@
         <script src="scripts/menu.js"></script>
         <script>
             function openLinks() {
-                document.getElementById("body").style.height = "70%"
+                document.getElementById("body").style.height = "29.5rem"
                 document.getElementById("bottom-arrow").style.opacity = "0"
                 document.getElementById("bottom-arrow").style.cursor = "default"
                 document.getElementById("links-border").style.width = "98%"
                 document.getElementById("links-container").style.opacity = "1"
                 document.getElementById("links-container").style.zIndex = 4;
+                document.getElementById("links-container").style.display = "";
             }
         </script>
         <script src="https://kit.fontawesome.com/3fc9433eba.js" crossorigin="anonymous"></script>
