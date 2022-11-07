@@ -103,7 +103,7 @@ body {
     border-radius: 10px;
     box-shadow: 7px 7px 5px 0px #51617533;
     padding: 1%;
-    margin-left: -25%;
+    margin-left: -30%;
     transition: 0.4s;
     z-index: 1;
 }
@@ -171,6 +171,87 @@ body {
     text-shadow: 3px 3px #34425575;
     margin-top: 1%;
     font-size: 45px;
+}
+.images {
+    height: fit-content;
+    width: 25%;
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    margin-top: 2%;
+    margin-right: -66%;
+    box-shadow: 7px 7px 5px 0px #51617533;
+    padding: 1%;
+    overflow: hidden;
+    transition: 0.4s;
+}
+.index {
+    width: 20%;
+    height: 3%;
+    position: absolute;
+    margin-right: -66%;
+    margin-top: 38%;
+    background-color: black;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 100%;
+    user-select: none;
+    background-color: #5a728f;
+}
+.next {
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+}
+.prev {
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    z-index: 2;
+    left: 10;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.slide {
+    display: none;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');

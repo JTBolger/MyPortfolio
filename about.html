@@ -30,7 +30,7 @@
         </div>
 
         <a href="#" id="close-button" onclick="closeNav()">&times</a>
-        <div id="bottom" onclick="openNav()" style="height:0%;">
+        <div id="bottom" onclick="openNav()" style="height:0%; position: fixed;">
             <div class="container" id="container">
                 <a href=./index.html>HOME</a>
                 <a href=./about.html>ABOUT</a>
@@ -50,8 +50,27 @@
                     <a href="https://www.linkedin.com/in/john-thomas-bolger" target="_blank"><i class="fa fa-linkedin-square"></i></a>
                 </div>
             </div>
+            <div class="images">
+                <div class="image-frame">
+                    <div class="slide fade">
+                        <img src="images/pic-of-me.png" alt="" width="100%" height="100%"/>
+                    </div>
+                    <div class="slide fade">
+                        <img src="images/bonfire-pic.jpg" alt="" width="100%" height="100%"/>
+                    </div>
+                    <!-- <img src="images/afterhours-logo.png" alt=""/> -->
+
+                    <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-arrow-left"></i></a>
+                    <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="index">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
         </div>
         <script src="scripts/transition.js"></script>
+        <script src="scripts/slideshow.js"></script>
         <script src="scripts/menu.js"></script>
         <script>
             function openLinks() {
