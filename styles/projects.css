@@ -112,7 +112,7 @@ body {
     margin-bottom: 1%;
 }
 .project {
-    width: 95%;
+    width: 45%;
     height: 15rem;
     background-color: white;
     margin-top: 2%;
@@ -162,10 +162,6 @@ body {
     height: 100%;
     margin-left: 1%;
 }
-.project-links-title {
-    width: 100%;
-    height: fit-content;
-}
 .project-links-title h1 {
     text-align: center;
     font-family: 'roboto';
@@ -176,6 +172,83 @@ body {
     margin-bottom: 1%;
     font-weight: 1000;
     letter-spacing: 5px;
+}
+
+/* Languages Graph */
+.graph {
+    width: 45%;
+    height: 55%;
+    /* position: absolute; */
+    position: fixed;
+    background-color: white;
+    margin-left: 49%;
+    margin-top: 8%;
+    border-radius: 10px;
+    box-shadow: 7px 7px 5px 0px #51617533;
+    padding: 1%;
+}
+.graph-content {
+    width: 100%;
+    height: 75%;
+    background-color: #3e4a58;
+    border-radius: 10px;
+    box-shadow: 7px 7px 5px 0px #51617533;
+    display: flex;
+    justify-content: center;
+}
+.graph-lines:nth-child(1) {
+    width: 93%;
+    height: 1px;
+    background-color: #b5bfcc;
+    margin-top: 38%;
+    position: absolute;
+    color: #dce9fb;
+    font-family: 'roboto';
+    font-weight: bold;
+}
+.graph-lines:nth-child(2) {
+    width: 93%;
+    height: 1px;
+    background-color: #b5bfcca8;
+    margin-top: 29.75%;
+    position: absolute;
+    color: white;
+}
+.graph-lines:nth-child(3) {
+    width: 93%;
+    height: 1px;
+    background-color: #b5bfcca8;
+    margin-top: 21.5%;
+    position: absolute;
+    color: white;
+}
+.graph-lines:nth-child(4) {
+    width: 93%;
+    height: 1px;
+    background-color: #b5bfcca8;
+    margin-top: 13.25%;
+    position: absolute;
+    color: white;
+}
+.graph-lines:nth-child(5) {
+    width: 93%;
+    height: 1px;
+    background-color: #b5bfcca8;
+    margin-top: 5%;
+    position: absolute;
+    color: #dce9fb;
+    font-family: 'roboto';
+}
+
+#bar1 {
+    width: 10px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    margin-top: 30.7%;
+    margin-left: -60%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
