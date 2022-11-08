@@ -41,6 +41,16 @@
 
         <div class="main">
             <div id="body">
+                <div class="body-title-container">
+                    <div class="body-title">
+                        <h1>About Me</h1>
+                    </div>
+                </div>
+                <div id="body-content">
+                    <p>My name is John-Thomas Bolger. I am 19 years old and currently attend Tarleton State University in Stephenville, Texas. I am a computer science major focusing on software engineering and have some knowledge in frontend development and game design.</p>
+                    <p style="opacity: 0;">_</p>
+                    <p> I am a member of the Tarleton Computer Society and the Tarleton Rocket Club, where I have contributed to several projects. I am familiar with various programming languages such as Python, C, Java, HTML, CSS, and JavaScript, all of which I have learned and practiced throughout my first year at Tarleton State University.</p>
+                </div>
                 <div id="bottom-arrow"><a onclick="openLinks()"><i class="fa-solid fa-arrow-down"></i></a></div>
                 <div id="links-border"></div>
                 <div id="links-container" style="display: none;">
@@ -84,6 +94,8 @@
                 document.getElementById("links-container").style.opacity = "1"
                 document.getElementById("links-container").style.zIndex = 4;
                 document.getElementById("links-container").style.display = "";
+                document.getElementById("body-content").style.bottom = "85px";
+                document.getElementById("body-content").style.height = "62%";
             }
         </script>
         <script src="https://kit.fontawesome.com/3fc9433eba.js" crossorigin="anonymous"></script>
