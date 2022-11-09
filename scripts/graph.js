@@ -29,12 +29,12 @@ var bar6 = document.getElementById("bar6")
 var bar6Text = document.getElementById("bar6Text")
 
 function portfolioGraph() {
-    bar1.style.height = "14500%"
+    bar1.style.height = "8500%"
     bar1Text.textContent = "33.0%"
-    bar2.style.height = "8500%"
-    bar2Text.textContent = "61.1%"
-    bar3.style.height = "1750%"
-    bar3Text.textContent = "5.9%"
+    bar2.style.height = "14500%"
+    bar2Text.textContent = "58.7%"
+    bar3.style.height = "2000%"
+    bar3Text.textContent = "9.9%"
     bar4.style.height = "750%"
     bar4Text.textContent = ""
     bar5.style.height = "750%"

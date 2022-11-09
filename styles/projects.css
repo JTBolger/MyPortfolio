@@ -165,15 +165,24 @@ body {
     flex-direction: column;
     color: #516175;
     font-size: 1rem;
+    align-items: center;
+    padding-top: 1%;
 }
 .project-links a {
-    position: absolute;
-    width: fit-content;
-    height: 30px;
+    height: 50px;
     color: #5a728f;
     text-shadow: 1px 1px #34425575;
-    font-size: 30px;
+    font-size: 2.5rem;
     transition: 0.4s;
+}
+.project-links a:hover {
+    transform: scale(1.1);
+}
+.project-links a:visited {
+    color: #5a728f;
+}
+.project-links a:link {
+    color: #5a728f;
 }
 .project-links-title h1 {
     text-align: center;
