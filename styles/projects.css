@@ -129,10 +129,12 @@ body {
 }
 .image-frame {
     width: 25%;
-    height: 100%;
-    background-color: #516175;
+    height: 70%;
+    /* background-color: #516175; */
     border-radius: 10px;
-    box-shadow: 5px 5px 5px 0px #51617533;
+    /* box-shadow: 5px 5px 5px 0px #51617533; */
+    padding: 1%;
+    margin-top: 4%;
 }
 .description {
     width: 40rem;
@@ -154,8 +156,8 @@ body {
     margin-top: -0.25%;
     font-size: 45px;
     margin-bottom: 1%;
-    font-weight: 1000;
     letter-spacing: 5px;
+    margin-left: -25%;
 }
 .project-links {
     width: 6.5rem;
@@ -174,6 +176,7 @@ body {
     text-shadow: 1px 1px #34425575;
     font-size: 2.5rem;
     transition: 0.4s;
+    margin-top: 2%;
 }
 .project-links a:hover {
     transform: scale(1.1);

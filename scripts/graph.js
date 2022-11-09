@@ -30,7 +30,7 @@ var bar6Text = document.getElementById("bar6Text")
 
 function portfolioGraph() {
     bar1.style.height = "8500%"
-    bar1Text.textContent = "33.0%"
+    bar1Text.textContent = "31.4%"
     bar2.style.height = "14500%"
     bar2Text.textContent = "58.7%"
     bar3.style.height = "2000%"
@@ -51,6 +51,20 @@ function afterhoursGraph() {
     bar3Text.textContent = "44.3%"
     bar4.style.height = "4800%"
     bar4Text.textContent = "22.9%"
+    bar5.style.height = "750%"
+    bar5Text.textContent = ""
+    bar6.style.height = "750%"
+    bar6Text.textContent = ""
+}
+function rocketclubGraph() {
+    bar1.style.height = "7500%"
+    bar1Text.textContent = "30.5%"
+    bar2.style.height = "9000%"
+    bar2Text.textContent = "37.0%"
+    bar3.style.height = "8000%"
+    bar3Text.textContent = "32.5%"
+    bar4.style.height = "750%"
+    bar4Text.textContent = ""
     bar5.style.height = "750%"
     bar5Text.textContent = ""
     bar6.style.height = "750%"
