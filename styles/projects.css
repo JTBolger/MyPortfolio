@@ -179,13 +179,14 @@ body {
     width: 45%;
     height: 55%;
     /* position: absolute; */
-    position: fixed;
+    position: absolute;
     background-color: white;
     margin-left: 49%;
     margin-top: 8%;
     border-radius: 10px;
     box-shadow: 7px 7px 5px 0px #51617533;
     padding: 1%;
+    z-index: 1;
 }
 .graph-content {
     width: 100%;
@@ -195,6 +196,7 @@ body {
     box-shadow: 7px 7px 5px 0px #51617533;
     display: flex;
     justify-content: center;
+    z-index: 2;
 }
 .graph-lines:nth-child(1) {
     width: 93%;
@@ -205,6 +207,7 @@ body {
     color: #dce9fb;
     font-family: 'roboto';
     font-weight: bold;
+    z-index: 3;
 }
 .graph-lines:nth-child(2) {
     width: 93%;
@@ -213,6 +216,7 @@ body {
     margin-top: 29.75%;
     position: absolute;
     color: white;
+    z-index: 3;
 }
 .graph-lines:nth-child(3) {
     width: 93%;
@@ -221,6 +225,7 @@ body {
     margin-top: 21.5%;
     position: absolute;
     color: white;
+    z-index: 3;
 }
 .graph-lines:nth-child(4) {
     width: 93%;
@@ -229,6 +234,7 @@ body {
     margin-top: 13.25%;
     position: absolute;
     color: white;
+    z-index: 3;
 }
 .graph-lines:nth-child(5) {
     width: 93%;
@@ -238,17 +244,64 @@ body {
     position: absolute;
     color: #dce9fb;
     font-family: 'roboto';
+    z-index: 3;
 }
 
-#bar1 {
+#bar {
     width: 10px;
     height: 50px;
     background-color: white;
     position: absolute;
-    margin-top: 30.7%;
-    margin-left: -60%;
+    /* margin-top: 30.7%; */
+    /* margin-left: 15%; */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    bottom: 0;
+}
+
+.options {
+    position: absolute;
+    width: 35%;
+    height: 16%;
+    background-color: #516175;
+    color: white;
+    bottom: 5%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px #51617533;
+    text-align: center;
+    cursor: pointer;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+.options:hover {
+    background-color: #3e4a58
+}
+.options-content {
+    display: none;
+    position: absolute;
+    background-color: #b5bfcc;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    top: 100%;
+}
+.options-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 12px 16px;
+    border-style: none none solid none;
+    border-width: 1px;
+    cursor: pointer;
+}
+.options-content a:hover {
+    background-color: #98a1ac;
+}
+.show {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');

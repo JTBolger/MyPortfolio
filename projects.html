@@ -84,17 +84,50 @@
             </div>
             <div class="graph">
                 <div class="graph-content">
-                    <div class="graph-lines">0%</div>
+                    <div class="graph-lines">
+                        0%
+                        <div id="bar" style="margin-left: 15%;"></div>
+                        <div id="bar" style="margin-left: 30%;"></div>
+                        <div id="bar" style="margin-left: 45%;"></div>
+                        <div id="bar" style="margin-left: 60%;"></div>
+                        <div id="bar" style="margin-left: 75%;"></div>
+                        <div id="bar" style="margin-left: 90%;"></div>
+                    </div>
                     <div class="graph-lines"></div>
                     <div class="graph-lines"></div>
                     <div class="graph-lines"></div>
                     <div class="graph-lines">100%</div>
-
-                    <div id="bar1"></div>
+                    
+                    <div class="options" onclick="menu()">
+                        Select Project
+                        <div id="myDropdown" class="options-content">
+                            <a>project one</a>
+                            <a>project two</a>
+                            <a>project three</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <script src="scripts/transition.js"></script>
         <script src="scripts/menu.js"></script>
+        <script>
+            function menu() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            window.onclick = function(event) {
+                if (!event.target.matches('.options')) {
+                    var dropdowns = document.getElementsByClassName("options-content");
+                    var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                        var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
     </body>
 </html>
