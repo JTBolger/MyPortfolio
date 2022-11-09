@@ -42,7 +42,18 @@
             <h1 class="title">PROJECTS</h1>
             <div class="project-body">
                 <div class="project">
-                    <img class="image-frame" src="images/afterhours-logo.png" alt=""/>
+                    <img class="image-frame" src="" alt=""/>
+                    <div class="description">
+                        <div class="description-title">
+                            <h1>My Portfolio</h1>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/JTBolger" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="image-frame"></div>
                     <div class="description">
                         <div class="description-title">
                             <h1>Afterhours</h1>
@@ -54,16 +65,7 @@
                     <div class="image-frame"></div>
                     <div class="description">
                         <div class="description-title">
-                            <h1> </h1>
-                        </div>
-                    </div>
-                    <div class="project-links"></div>
-                </div>
-                <div class="project">
-                    <div class="image-frame"></div>
-                    <div class="description">
-                        <div class="description-title">
-                            <h1> </h1>
+                            <h1>Tarleton Rocket Club</h1>
                         </div>
                     </div>
                     <div class="project-links"></div>
@@ -77,7 +79,7 @@
                     </div>
                     <div class="project-links">
                         <div class="project-links-title">
-                            <h1>Links</h1>
+                            <h1> </h1>
                         </div>
                     </div>
                 </div>
@@ -86,12 +88,18 @@
                 <div class="graph-content">
                     <div class="graph-lines">
                         0%
-                        <div id="bar" style="margin-left: 15%;"></div>
-                        <div id="bar" style="margin-left: 30%;"></div>
-                        <div id="bar" style="margin-left: 45%;"></div>
-                        <div id="bar" style="margin-left: 60%;"></div>
-                        <div id="bar" style="margin-left: 75%;"></div>
-                        <div id="bar" style="margin-left: 90%;"></div>
+                        <a style="margin-left: 9%;">HTML</a>
+                        <a style="margin-left: 8%;">CSS</a>
+                        <a style="margin-left: 7%;">JavaScript</a>
+                        <a style="margin-left: 4%;">Python</a>
+                        <a style="margin-left: 9.75%;">C</a>
+                        <a style="margin-left: 10.5%;">Java</a>
+                        <div id="bar1" class="bar" style="margin-left: 15%;"><a id="bar1Text">0%</a></div>
+                        <div id="bar2" class="bar" style="margin-left: 30%;"><a id="bar2Text">0%</a></div>
+                        <div id="bar3" class="bar" style="margin-left: 45%;"><a id="bar3Text">0%</a></div>
+                        <div id="bar4" class="bar" style="margin-left: 60%;"><a id="bar4Text">0%</a></div>
+                        <div id="bar5" class="bar" style="margin-left: 75%;"><a id="bar5Text">0%</a></div>
+                        <div id="bar6" class="bar" style="margin-left: 90%;"><a id="bar6Text">0%</a></div>
                     </div>
                     <div class="graph-lines"></div>
                     <div class="graph-lines"></div>
@@ -101,8 +109,8 @@
                     <div class="options" onclick="menu()">
                         Select Project
                         <div id="myDropdown" class="options-content">
-                            <a>project one</a>
-                            <a>project two</a>
+                            <a onclick="portfolioGraph()">My Portfolio</a>
+                            <a onclick="afterhoursGraph()">Afterhours</a>
                             <a>project three</a>
                         </div>
                     </div>
@@ -111,23 +119,6 @@
         </div>
         <script src="scripts/transition.js"></script>
         <script src="scripts/menu.js"></script>
-        <script>
-            function menu() {
-                document.getElementById("myDropdown").classList.toggle("show");
-            }
-
-            window.onclick = function(event) {
-                if (!event.target.matches('.options')) {
-                    var dropdowns = document.getElementsByClassName("options-content");
-                    var i;
-                    for (i = 0; i < dropdowns.length; i++) {
-                        var openDropdown = dropdowns[i];
-                        if (openDropdown.classList.contains('show')) {
-                            openDropdown.classList.remove('show');
-                        }
-                    }
-                }
-            }
-        </script>
+        <script src="scripts/graph.js"></script>
     </body>
 </html>

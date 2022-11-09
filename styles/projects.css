@@ -135,7 +135,7 @@ body {
     box-shadow: 5px 5px 5px 0px #51617533;
 }
 .description {
-    width: 50rem;
+    width: 40rem;
     height: 100%;
     margin-left: 1%;
     border-width: 0px 1px 0px 0px;
@@ -158,9 +158,22 @@ body {
     letter-spacing: 5px;
 }
 .project-links {
-    width: 13rem;
+    width: 6.5rem;
     height: 100%;
     margin-left: 1%;
+    display: flex;
+    flex-direction: column;
+    color: #516175;
+    font-size: 1rem;
+}
+.project-links a {
+    position: absolute;
+    width: fit-content;
+    height: 30px;
+    color: #5a728f;
+    text-shadow: 1px 1px #34425575;
+    font-size: 30px;
+    transition: 0.4s;
 }
 .project-links-title h1 {
     text-align: center;
@@ -178,7 +191,6 @@ body {
 .graph {
     width: 45%;
     height: 55%;
-    /* position: absolute; */
     position: absolute;
     background-color: white;
     margin-left: 49%;
@@ -246,10 +258,12 @@ body {
     font-family: 'roboto';
     z-index: 3;
 }
-
-#bar {
+.bar a {
+    padding-left: 125%;
+}
+.bar {
     width: 10px;
-    height: 50px;
+    height: 10000%;
     background-color: white;
     position: absolute;
     /* margin-top: 30.7%; */
@@ -257,6 +271,8 @@ body {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     bottom: 0;
+    transition: 0.5s;
+    z-index: 4;
 }
 
 .options {
@@ -270,11 +286,13 @@ body {
     box-shadow: 5px 5px 5px 0px #51617533;
     text-align: center;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.625rem;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 3;
+    font-family: "arial black";
+    text-shadow: 3px 3px #34425575;
 }
 .options:hover {
     background-color: #3e4a58
@@ -285,6 +303,8 @@ body {
     background-color: #b5bfcc;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     top: 100%;
+    font-family: "roboto";
+    text-shadow: 1px 1px #34425575;
 }
 .options-content a {
     color: black;
