@@ -86,6 +86,82 @@ body {
     transform: (5px 3px);
 }
 
+.contact-container {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+}
+.contact {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%;
+    height: 135%;
+    background-color: white;
+    align-self: center;
+    border-radius: 10px;
+    margin-top: 5rem;
+    overflow: scroll;
+}
+.title {
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    font-family: 'arial black';
+    color: #5a728f;
+    text-shadow: 3px 3px #34425575;
+    font-size: 45px;
+}
+.input {
+    margin-left: 12rem;
+    font-family: 'arial black';
+    color: #5a728f;
+    text-shadow: 3px 3px #34425575;
+    font-size: 1.5rem;
+    margin-bottom: -2%;
+    margin-top: 3%;
+}
+.input-name {
+    height: 1.5rem;
+    width: 80%;
+    background-color: #bacce2;
+    border: 2px solid #5a728f;
+    border-radius: 7px;
+    padding: 10px;
+    color: white;
+    outline: none;
+    box-shadow: 7px 7px 5px 0px #51617533;
+}
+.input-message {
+    height: 15.5rem;
+    width: 80%;
+    background-color: #bacce2;
+    border: 2px solid #5a728f;
+    border-radius: 7px;
+    padding: 10px;
+    color: white;
+    outline: none;
+    box-shadow: 7px 7px 5px 0px #51617533;
+    margin-bottom: 10rem;
+}
+.submit {
+    width: 10rem;
+    height: 3rem;
+    background-color: #516175;
+    color: white;
+    font-family: "arial black";
+    text-align: center;
+    border-radius: 5px;
+    font-size: 30px;
+    text-shadow: 3px 3px #344255d9;
+    margin-left: 34rem;
+    cursor: pointer;
+}
+
+
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
 .area{
